@@ -32,10 +32,7 @@ beomps@gmail.com 으로 소스와 개발자 정보,코멘트를 알려주시면 
 
 Beomps(박성범):
 플러그인 공개에 흔쾌히 동의 해주신 다음 지도 팀(http://blog.daum.net/daummaps/565)에게 감사합니다.
-조언을 준 동기들, 지인 분들께 감사합니다.
-
-
-======================================================================
+조언을 준 동기들과 친구들에게 감사합니다.
 
 개발 노트
 
@@ -69,6 +66,15 @@ This plug in made from Daum Open API.
 Beomps(park seong beom)
 Thanks for Daum Map team(http://blog.daum.net/daummaps/565) to open this plugin.
 Thanks for my co-worekers and friends.
+
+
+Dev Note
+
+*	  Not changing checkout form fields for woocommerce charge.
+*	  Available change checkout form fields through ' custom_override_checkout_fields' functions 'unset' code. (ex. Delete "lastname","company name","city"..etc)
+*	  If you change checkout form fiels, can cause Paygate/User form's not same problems.  
+*	  You can choose two modes, "http" or "https" through beomps_korea_post_search.php files 48,52 line.(default "http")
+*	  When initiate wordpress page, active Daum API script. If you solve this problem for increase loading time, share for me.
 
 ======================================================================
 
