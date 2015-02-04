@@ -107,7 +107,8 @@ e.g.
 
 == Screenshots ==
 
-1. Attached
+1. screenshot_1.png how to use1
+1. screenshot_2.png how to use2
 
 == Changelog ==
 
