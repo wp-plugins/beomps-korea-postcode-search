@@ -103,12 +103,12 @@ e.g.
 
 == Frequently Asked Questions ==
 
-1.
+1. start.
 
 == Screenshots ==
 
-1. screenshot_1.png how to use1
-1. screenshot_2.png how to use2
+1. screenshot-1.png how to use1
+2. screenshot-2.png how to use2
 
 == Changelog ==
 
