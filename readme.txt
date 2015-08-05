@@ -4,7 +4,7 @@ Donate link: http://beomps.com/
 Tags: postcode, korea, address, search, beomps, daum, 도로명, 주소, 우편번호, 검색, 다음
 Requires at least: 3.0.1
 Tested up to: 4.0
-Stable tag: 4.3
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
