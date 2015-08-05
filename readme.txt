@@ -8,7 +8,7 @@ Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-우커머스의 한국형 도로명 주소/우편번호 검색 플러그인 입니다.
+우커머스의 한국형 도로명 주소/우편번호 검색 플러그인 입니다. 
 
 == Description ==
 

@@ -5,7 +5,7 @@
 	 * Description: 한국 우편 번호 검색을 위한 플러그인입니다. 우커머스의 billing/shipping 페이지에 호환되도록 작성하였습니다. Korea Postcode Search
 	 * Author: park seong beom
 	 * Author URI: Http://beomps.com
-	 * Version:2.0 
+	 * Version:2.0
 	 */
 
 	//woocommert checkout filed change
