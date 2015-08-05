@@ -2,15 +2,26 @@
 Contributors: beomps, daum
 Donate link: http://beomps.com/
 Tags: postcode, korea, address, search, beomps, daum, 도로명, 주소, 우편번호, 검색, 다음
-Requires at least: 3.0.1
-Tested up to: 4.0
-Stable tag: 1.0
+Requires at least: 4.2.3
+Tested up to: 4.2
+Stable tag: 2.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-우커머스의 한국형 도로명 주소/우편번호 검색 플러그인 입니다.
+우커머스의 한국형 도로명 주소/우편번호 검색 플러그인 입니다. 
 
 == Description ==
+
+----------------------------------------------변경사항-----------------------------------------------
+다음2.0 API로 변경하였습니다.
+또한 우편번호 체계 변경에 따라 (6자리->5자리) 우편번호 변경이 되었습니다.
+기존 우편 번호 사용을 위해서는 주석처리 된 "document.getElementById('billing_postcode').value = data.postcode1+'-'+data.postcode2;" 부분을 활성화 및 변경 된 5자리 우편번호인 zonecode 부분을 주석처리하여 비활성화 하시기 바랍니다.
+추후 관리자 페이지를 통한 옵션 선택을 간편히 할 수 있도록 업데이트 할 예정입니다.
+가장 큰 변경 사항으로는, 많이 질문을 주신 우커머스 계정 페이지의 우편번호 검색 기능 추가와 사용하지 않는 폼의 비활성화 부분에
+대해서 기본 적용 되도록 변경하였습니다. (이름 부분의 "성"부분 삭제, 추가 주소입력 부분인 "시-도" 부분은 삭제, "회사명" 입력란 삭제)
+위 비 표기된 컬럼을 사용하시는 분들께선, 소스 편집을 통해 unset 부분을 맞추어 주석 처리하시기 바랍니다.
+
+--------------------------------------------------------------------------------------------------------------------------
 
 우커머스의 한국형 도로명 주소/ 우편번호 검색 플러그인 입니다.
 
@@ -70,20 +81,20 @@ Thanks for my co-worekers and friends.
 
 Dev Note
 
-*	  Not changing checkout form fields for woocommerce charge.
+*	  Changing checkout form fields for woocommerce charge.
 *	  Available change checkout form fields through ' custom_override_checkout_fields' functions 'unset' code. (ex. Delete "lastname","company name","city"..etc)
 *	  If you change checkout form fiels, can cause Paygate/User form's not same problems.  
-*	  You can choose two modes, "http" or "https" through beomps_korea_post_search.php files 48,52 line.(default "http")
+*	  You can choose two modes, "http" or "https" through beomps_korea_post_search.php files 56,59 line.(default "http")
 *	  When initiate wordpress page, active Daum API script. If you solve this problem for increase loading time, share for me.
 
 ======================================================================
 
 Dev Note
 
-*	  Not changing checkout form fields for woocommerce charge.
+*	  Changing checkout form fields for woocommerce charge.
 *	  Available change checkout form fields through ' custom_override_checkout_fields' functions 'unset' code. (ex. Delete "lastname","company name","city"..etc)
 *	  If you change checkout form fiels, can cause Paygate/User form's not same problems.  
-*	  You can choose two modes, "http" or "https" through beomps_korea_post_search.php files 48,52 line.(default "http")
+*	  You can choose two modes, "http" or "https" through beomps_korea_post_search.php files 56,59 line.(default "http")
 *	  When initiate wordpress page, active Daum API script. If you solve this problem for increase loading time, share for me.
 
 == Installation ==
@@ -107,17 +118,22 @@ e.g.
 
 == Screenshots ==
 
-1. screenshot-1.png how to use1
-2. screenshot-2.png how to use2
+1. screenshot-1.png [change] how to use1
+2. screenshot-2.png [change] how to use2
 
 == Changelog ==
 
+= 2.0 =
+* Daum API ver2.0 - Change postcode style(5 digit)
+* Change Form Unset Setting
 = 1.0 =
 * Open Korea Postcode Search plugin
 
 
 == Upgrade Notice ==
 
+= 2.0 =
+* Daum API ver2.0 upgrade.
 = 1.0 =
 
 == Arbitrary section ==
